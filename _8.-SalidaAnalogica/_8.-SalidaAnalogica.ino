@@ -1,3 +1,5 @@
+//Los pines PWM de la placa Arduino pueden distinguirse gracias al
+//símbolo ~ . Los pines de tipo PWM llevan ese simbolo por delante.
 const int led=6;
 void setup() {
  pinMode(led,OUTPUT);
@@ -5,6 +7,7 @@ void setup() {
 }
 
 void loop() {
+//Con las siguientes instrucciones se ira variando la intensidad de un led.
   analogWrite(led,0);
   delay(1500);
   Serial.println("0");
